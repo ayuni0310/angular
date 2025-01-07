@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"friendlychat-57574","appId":"1:232283349857:web:e8cc7f57c7327e0f92db20","storageBucket":"friendlychat-57574.firebasestorage.app","apiKey":"AIzaSyBWc4uZcc3fXrGwQY_3TuXFWnLzd7s-gbk","authDomain":"friendlychat-57574.firebaseapp.com","messagingSenderId":"232283349857"})), provideAuth(() => getAuth()), provideFirebaseApp(() => initializeApp({"projectId":"friendlychat-57574","appId":"1:232283349857:web:e8cc7f57c7327e0f92db20","storageBucket":"friendlychat-57574.firebasestorage.app","apiKey":"AIzaSyBWc4uZcc3fXrGwQY_3TuXFWnLzd7s-gbk","authDomain":"friendlychat-57574.firebaseapp.com","messagingSenderId":"232283349857"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideStorage(() => getStorage()), provideFirebaseApp(() => initializeApp({"projectId":"friendlychat-57574","appId":"1:232283349857:web:e8cc7f57c7327e0f92db20","storageBucket":"friendlychat-57574.firebasestorage.app","apiKey":"AIzaSyBWc4uZcc3fXrGwQY_3TuXFWnLzd7s-gbk","authDomain":"friendlychat-57574.firebaseapp.com","messagingSenderId":"232283349857"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
