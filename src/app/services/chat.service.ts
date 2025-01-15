@@ -146,9 +146,8 @@ addMessage = async (
   // Start listening to the query.
   return collectionData(recentMessagesQuery);
 }
-
   // Saves a new message containing an image in Firestore.
-// This first saves the image in Firebase storage.
+  // This first saves the image in Firebase storage.
 saveImageMessage = async(file: any) => {
   try {
     // 1 - Add a message with a loading icon that will get updated with the shared image.
