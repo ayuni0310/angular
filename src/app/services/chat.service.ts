@@ -188,7 +188,6 @@ saveImageMessage = async(file: any) => {
     return null;
   }
   // Requests permissions to show notifications.
-  // Requests permissions to show notifications.
 requestNotificationsPermissions = async () => {
   console.log('Requesting notifications permission...');
   const permission = await Notification.requestPermission();
@@ -200,6 +199,7 @@ requestNotificationsPermissions = async () => {
   } else {
     console.log('Unable to get permission to notify.');
   }
+
 };
 
   // Saves the messaging device token to Cloud Firestore.
