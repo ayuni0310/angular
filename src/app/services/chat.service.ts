@@ -93,7 +93,6 @@ logout() {
 }
 
   // Adds a text or image message to Cloud Firestore.
-// Adds a text or image message to Cloud Firestore.
 addMessage = async (
   textMessage: string | null,
   imageUrl: string | null,
