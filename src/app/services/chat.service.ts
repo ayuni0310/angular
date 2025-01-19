@@ -63,7 +63,7 @@ export class ChatService {
   LOADING_IMAGE_URL = 'https://www.google.com/images/spin-32.gif?a';
 
   // observable that is updated when the auth state changes
-user$ = user(this.auth);
+ user$ = user(this.auth);
   currentUser: User | null = this.auth.currentUser;
   userSubscription: Subscription;
   
@@ -139,15 +139,17 @@ addMessage = async (
     return this.addMessage(messageText, null);
   };
 
-  // Loads chat message history and listens for upcoming ones.
-  loadMessages = () => {
+// Loads chat message history and listens for upcoming ones.
+loadMessages = () => {
   // Create the query to load the last 12 messages and listen for new ones.
   const recentMessagesQuery = query(collection(this.firestore, 'messages'), orderBy('timestamp', 'desc'), limit(12));
   // Start listening to the query.
   return collectionData(recentMessagesQuery);
 }
+
+
   // Saves a new message containing an image in Firestore.
-  // This first saves the image in Firebase storage.
+// This first saves the image in Firebase storage.
 saveImageMessage = async(file: any) => {
   try {
     // 1 - Add a message with a loading icon that will get updated with the shared image.
@@ -170,7 +172,7 @@ saveImageMessage = async(file: any) => {
   } catch (error) {
     console.error('There was an error uploading a file to Cloud Storage:', error);
   }
-}
+};
 
   async updateData(path: string, data: any) {}
 
@@ -202,7 +204,7 @@ requestNotificationsPermissions = async () => {
 
 };
 
-  // Saves the messaging device token to Cloud Firestore.
+ // Saves the messaging device token to Cloud Firestore.
 saveMessagingDeviceToken= async () => {
   try {
     const currentToken = await getToken(this.messaging);
@@ -227,5 +229,5 @@ saveMessagingDeviceToken= async () => {
   } catch(error) {
     console.error('Unable to get messaging token.', error);
   };
-}
+};
 }

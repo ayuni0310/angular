@@ -1,8 +1,11 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyBWc4uZcc3fXrGwQY_3TuXFWnLzd7s-gbk",
-  authDomain: "friendlychat-57574.firebaseapp.com",
-  projectId: "friendlychat-57574",
-  storageBucket: "friendlychat-57574.firebasestorage.app",
-  messagingSenderId: "232283349857",
-  appId: "1:232283349857:web:e8cc7f57c7327e0f92db20"
+export const environment = {
+  firebase: {
+    apiKey: "AIzaSyDMSP2PONMNv4iyRsBgsIF7qf8sBYpblCc",
+    authDomain: "friendlychat-5a09e.firebaseapp.com",
+    projectId: "friendlychat-5a09e",
+    storageBucket: "friendlychat-5a09e.firebasestorage.app",
+    messagingSenderId: "36603489317",
+    appId: "1:36603489317:web:a46426546eca70e06863cc",
+    measurementId: 'G-MEASUREMENT_ID',
+  },
 };
